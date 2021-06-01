@@ -1,0 +1,135 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+body{
+    background-image: url("dating copy.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: visible;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: transparent;
+    color:white;
+    background-color: black;
+    opacity: 0.75;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#Hobbies,#gen,#search{
+    float:right;
+    padding-right:2%;
+    display:inline-flex;
+    font-size: 99%;
+    color: whitesmoke;
+    text-align: justify;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+#hobby:hover{
+    content:"Partying/Reading/Hanging Out"
+}
+#search>button{
+        opacity:0.9;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        background-color: white;
+        color: black;
+        border: 2px solid #555555;
+        padding:2px;
+      }
+#search>button:hover{
+opacity:1;
+}
+#search>button:active{
+    opacity:1;
+    border:black;
+    }
+body{
+    color:white;
+}
+section>button{
+    float:right;
+    margin: 0 auto;
+    margin-right:2px;
+    background-color: transparent;
+    cursor:pointer;
+    text-decoration: none;
+    text-align: center;
+    padding:0.5%;
+    margin: 0 auto;
+    display:inline-flex;
+    transition-duration: 0.4s;
+    color:black;
+    text-transform: uppercase;
+    font-size:90%;
+    border: solid black 1px;
+    border-radius: 0.05rem;
+    opacity:0.75;
+}
+section>button:hover{
+opacity:1;
+background-color: black;
+color:white;
+}
+.person-row{
+    margin:0 auto;
+    padding:5%;
+}
+.person-row>.person-info:nth-of-type(odd){
+    background-color: wheat;
+    padding-bottom: 3%;
+    color:#342E37;
+    font-weight: bold;
+    border: solid 1px black;
+    opacity:0.85;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+.person-row>.person-info:nth-of-type(odd):hover{
+    opacity:1;
+}
+.person-row>.person-info:nth-of-type(even){
+    background-color: pink;
+    padding-bottom: 3%;
+    color:#342E37;
+    font-weight: bold;
+    border: solid 1px black;
+    opacity:0.85;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+.person-row>.person-info:nth-of-type(even):hover{
+    opacity:1;
+}
+section>span{
+    color:#342E37;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+i::after{
+    content:"    Hey, I am ";
+}
+@media screen and (max-width:600px){
+section>button{
+    border:none;
+    display:inline-block;
+    padding:none;
+    margin:none;
+}
+section>span{
+    font-size: 13.5px;
+}
+}
+
+
